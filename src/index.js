@@ -11,6 +11,8 @@ app.use(cors({
     preflightContinue: false,
     optionsSuccessStatus: 204,
     allowedHeaders: 'Content-Type, Authorization',
+    exposedHeaders: 'Content-Type, Authorization, X-Requested-With',
+  credentials: true
   }));
 app.use(router);
 
